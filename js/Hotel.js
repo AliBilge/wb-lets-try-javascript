@@ -1,3 +1,26 @@
+
+var myHotel = {
+    name:'The Quay',
+    totalRooms: 40,
+    bookedRooms: 25,
+    types: [
+        'twin',
+        'double',
+        'suite'
+    ],
+
+    checkAvailability: function(){
+        console.log('Remaining available rooms: ' + (this.totalRooms - this.bookedRooms ));
+    }
+}
+
+myHotel.bookedRooms += 5; // Increase to 30.
+
+myHotel.checkAvailability();
+
+
+//Fizbuz
+
 /*
  * Using what you just learned about conditional statements and loops, write a program that uses console.log() to print all the numbers from 1 to 100, with two exceptions.
  * For numbers divisible by 3, print Fizz instead of the number, and for numbers divisible by 5 (and not 3), print Buzz instead.
@@ -73,37 +96,3 @@ var myFizzBuzz = {
 
 // Let's execute our program:
 // myFizzBuzz.fizzBuzz();
-// © 2020 GitHub, Inc.
-// Terms
-// Privacy
-// Security
-// Status
-// Help
-// Contact GitHub
-// Pricing
-// API
-// Training
-// Blog
-// About
-
-// Hotel
-
-
-var myHotel = {
-    name:'The Quay',
-    totalRooms: 40,
-    bookedRooms: 25,
-    types: [
-        'twin',
-        'double',
-        'suite'
-    ],
-
-    checkAvailability: function(){
-        console.log('Remaining available rooms: ' + (this.totalRooms - this.bookedRooms ));
-    }
-}
-
-myHotel.bookedRooms += 5; // Increase to 30.
-
-myHotel.checkAvailability();
